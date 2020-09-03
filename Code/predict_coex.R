@@ -7,7 +7,7 @@ require(tidyverse) ## for efficient data manipulation and plotting
 theme_set(theme_bw()) ## set default theme
 theme_update(panel.grid.major=element_blank(), panel.grid.minor=element_blank())
 
-dat <- readRDS("../Results/alldata.rds") ## load data
+dat <- readRDS("../Data/alldata.rds") ## load data
 
 res <- 15 ## grid resolution of heat map
 dat %>%

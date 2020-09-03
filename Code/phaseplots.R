@@ -8,7 +8,7 @@ theme_set(theme_bw()) ## set default theme
 theme_update(panel.grid.major=element_blank(), panel.grid.minor=element_blank())
 
 
-dat <- readRDS("../Results/alldata.rds") %>% ## load data
+dat <- readRDS("../Data/alldata.rds") %>% ## load data
   mutate(theta=round(theta, 2)) %>% ## round theta values
   filter(w>0.5) %>% ## drop lowest environmental breadth value
   filter(coexf) ## only those with coexistence at the end

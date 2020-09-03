@@ -8,7 +8,7 @@ theme_set(theme_bw()) ## set default theme
 theme_update(panel.grid.major=element_blank(), panel.grid.minor=element_blank())
 
 
-dat <- readRDS("../Results/alldata.rds") %>% ## load data
+dat <- readRDS("../Data/alldata.rds") %>% ## load data
   filter(w==3, coexf, fiti>0) ## only those with w=3 and coexistence at the end
 
 ## plot change in niche overlap against environmental breadth
