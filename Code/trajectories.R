@@ -18,8 +18,8 @@ separatrix <- tibble(rho=seq(0, 1, by=0.01)) %>%
 param <- expand_grid( ## table for factorial numerical experiment
   w=c(1, 3, 5), ## competition width
   theta=c(5.32, 8.54), ## intrinsic growth width
-  K1=c(1.0, 1.5), ## species 1 max intrinsic growth rate
-  mu1=c(0, 4), ## species 1 initial trait mean
+  K1=c(0.9, 1.5), ## species 1 max intrinsic growth rate
+  mu1=c(1, 4), ## species 1 initial trait mean
   mu2=c(-1, -3) ## species 2 initial trait mean
 )
 

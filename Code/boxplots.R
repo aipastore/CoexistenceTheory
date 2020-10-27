@@ -16,7 +16,7 @@ p_rho <- dat %>%
   mutate(drho=nichef-nichei) %>%
   ggplot +
   aes(x=theta, group=theta, y=drho) +
-  geom_boxplot(colour="#0072B2", fill="#0072B2", alpha=0.1, coef=2) +
+  geom_boxplot(colour="#0072B2", fill="#0072B2", alpha=0.1) +
   xlab(expression(paste("environmental breadth, ", theta))) +
   ylab(expression(paste("change in ", rho)))+
   geom_hline(yintercept=0, alpha=0.5)
@@ -26,7 +26,7 @@ p_kratio <- dat %>%
   mutate(dkappa=abs(log(fitf)-log(fiti))) %>%
   ggplot +
   aes(x=theta, group=theta, y=dkappa) +
-  geom_boxplot(colour="#0072B2", fill="#0072B2", alpha=0.1, coef=2) +
+  geom_boxplot(colour="#0072B2", fill="#0072B2", alpha=0.1) +
   xlab(expression(paste("environmental breadth, ", theta))) +
   ylab(expression(paste("change in ", log(kappa[1]/kappa[2]))))
 
